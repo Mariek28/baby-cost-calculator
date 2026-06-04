@@ -1,0 +1,11 @@
+http://babycostcalculator.com/* https://babycostcalculator.com/:splat 301!
+http://www.babycostcalculator.com/* https://babycostcalculator.com/:splat 301!
+https://www.babycostcalculator.com/* https://babycostcalculator.com/:splat 301!
+/index.html / 301!
+/first-year-baby-costs.html /first-year-baby-costs 301!
+/new-baby-budget-checklist.html /new-baby-budget-checklist 301!
+/diaper-and-formula-cost-guide.html /diaper-and-formula-cost-guide 301!
+/about.html /about 301!
+/contact.html /contact 301!
+/privacy.html /privacy 301!
+/disclaimer.html /disclaimer 301!
