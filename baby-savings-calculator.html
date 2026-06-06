@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Baby Savings Calculator — How Much to Save Before Baby</title>
+    <meta name="description" content="Calculate how much to save per month before your baby arrives. Set a savings goal based on estimated first-year costs." />
+    <link rel="canonical" href="https://babycostcalculator.com/baby-savings-calculator" />
+    <meta property="og:url" content="https://babycostcalculator.com/baby-savings-calculator" />
+    <style>
+      body { margin: 0; font-family: system-ui, -apple-system, Segoe UI, sans-serif; background: #eef5f2; color: #1d2428; line-height: 1.65; }
+      header, main, footer { max-width: 900px; margin: 0 auto; padding: 24px; }
+      nav { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 12px; }
+      a { color: #24695e; font-weight: 700; }
+      .article { background: #fff; border: 1px solid #d8e1e3; border-radius: 8px; padding: 30px; box-shadow: 0 18px 45px rgba(55,75,78,.12); }
+      h1 { line-height: 1.1; font-size: clamp(2rem, 4vw, 3rem); }
+      h2 { margin-top: 30px; line-height: 1.2; }
+      h3 { line-height: 1.25; }
+      .lead { font-size: 1.12rem; color: #405056; }
+      .callout { background: #edf8f5; border: 1px solid #b8d8d1; border-radius: 8px; padding: 18px; margin: 24px 0; }
+      .grid { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); margin: 24px 0; }
+      .card { background: #f4f7f6; border: 1px solid #d8e1e3; border-radius: 8px; padding: 18px; }
+      label { display: grid; gap: 6px; font-weight: 700; }
+      input, select { border: 1px solid #b8c6c9; border-radius: 8px; font: inherit; padding: 10px; background: #fff; }
+      button { background: #24695e; border: 0; border-radius: 8px; color: #fff; cursor: pointer; font: inherit; font-weight: 800; padding: 12px 16px; }
+      .result { font-size: 1.1rem; font-weight: 800; margin-top: 16px; }
+      .results { background: #f7fbfa; border: 1px solid #cbdcde; border-radius: 8px; margin-top: 22px; padding: 18px; }
+      table { border-collapse: collapse; margin: 18px 0; width: 100%; }
+      th, td { border: 1px solid #d8e1e3; padding: 10px; text-align: left; vertical-align: top; }
+      th { background: #edf8f5; }
+      .faq details { border-top: 1px solid #d8e1e3; padding: 12px 0; }
+      .print-button { background: #405056; margin-left: 8px; }
+      footer { color: #607078; font-size: .95rem; }
+      @media print { header, footer, nav, .no-print, button { display: none !important; } body { background: #fff; } main { max-width: none; padding: 0; } .article, .results { box-shadow: none; border: 0; } .results { page-break-inside: avoid; } }
+    </style>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0TJ86SZTZ7"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-0TJ86SZTZ7');
+  </script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8595359622097061" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header>
+      <strong>Baby Cost Calculator</strong>
+      <nav>
+        <a href="index.html">Calculator</a>
+        <a href="first-year-baby-costs.html">First-Year Costs</a>
+        <a href="new-baby-budget-checklist.html">Budget Checklist</a>
+        <a href="diaper-and-formula-cost-guide.html">Diapers & Formula</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="disclaimer.html">Disclaimer</a>
+      </nav>
+    </header>
+    <main>
+      <article class="article">
+        <h1>Baby Savings Calculator</h1><p class="lead">Calculate how much to save each month before baby arrives based on first-year cost estimates and current savings.</p><div class="grid no-print"><label>Months until due date<input id="months" type="number" min="1" max="9" value="6"></label><label>Estimated first-year cost<input id="goal" type="number" min="0" value="4800"></label><label>Current savings<input id="current" type="number" min="0" value="500"></label><label>Include emergency fund buffer<select id="buffer"><option value="0">No buffer</option><option value=".1" selected>Yes, add 10%</option><option value=".2">Yes, add 20%</option></select></label></div><button id="calcSavings" type="button">Calculate Savings Target</button><button class="print-button" type="button" onclick="window.print()">Print Results</button><section class="results" id="savingsResults" aria-live="polite"></section><h2>Planning baby savings</h2><p>Saving before a baby arrives can make the first year feel less chaotic. The goal is not to predict every expense perfectly. The goal is to create breathing room for the costs you already expect and the smaller surprises that tend to appear at inconvenient times. A savings plan can cover diapers, feeding supplies, medical bills, childcare deposits, nursery setup, and the gap between parental leave income and regular income.</p><p>Start with a first-year estimate, then adjust for your life. If you already have baby gear, your goal may be lower. If you expect unpaid leave, childcare deposits, or higher medical bills, increase the goal. The emergency fund buffer is optional, but many families like adding ten to twenty percent because prices change and babies do not follow spreadsheets. Even a small buffer can help when you need extra diapers, a different bottle, a humidifier, medicine, or an unexpected copay.</p><p>Monthly targets are useful, but weekly targets can feel more manageable. If the calculator says you need to save a large amount each month, look for smaller moves: redirect a subscription, pause nonessential purchases, sell unused items, or put registry completion discounts toward items you truly need. A steady plan matters more than a perfect plan. Review the number each month and update it as real costs become clearer.</p><section class="faq"><h2>Baby Savings FAQ</h2><details><summary>How much should I save before baby?</summary><p>It depends on insurance, leave, childcare, gear, and current savings. A calculator gives a starting target.</p></details><details><summary>Should I include an emergency buffer?</summary><p>A buffer is helpful if your budget is tight or you expect unpaid leave or medical bills.</p></details><details><summary>What if I cannot save the full amount?</summary><p>Save what you can, prioritize essentials, and look for ways to reduce recurring costs.</p></details><details><summary>When should I start saving?</summary><p>As early as possible, but even the last few months can help if you set a realistic weekly target.</p></details><details><summary>Can registry gifts lower my savings goal?</summary><p>Yes, if gifts cover items you would otherwise buy. Avoid counting on gifts until you know what was received.</p></details></section>
+      </article>
+    </main>
+    <footer>
+      © 2026 Baby Cost Calculator ·
+      <a href="index.html">Calculator</a> ·
+      <a href="diaper-cost-calculator.html">Diaper Cost</a> ·
+      <a href="formula-cost-calculator.html">Formula Cost</a> ·
+      <a href="childcare-cost-calculator.html">Childcare Cost</a> ·
+      <a href="baby-savings-calculator.html">Baby Savings</a> ·
+      <a href="how-to-save-money-on-baby-essentials.html">Save on Essentials</a> ·
+      <a href="breastfeeding-vs-formula-cost-comparison.html">Breastfeeding vs Formula</a> ·
+      <a href="hidden-costs-of-having-a-baby.html">Hidden Costs</a> ·
+      <a href="about.html">About</a> ·
+      <a href="contact.html">Contact</a> ·
+      <a href="privacy.html">Privacy</a> ·
+      <a href="disclaimer.html">Disclaimer</a>
+    </footer>
+    <script>
+function money(n){return new Intl.NumberFormat('en-US',{style:'currency',currency:'USD',maximumFractionDigits:0}).format(n)}
+function savingsCalc(){const m=Math.max(1,Number(months.value||1)), g=Number(goal.value||0), c=Number(current.value||0), b=Number(buffer.value); const total=g*(1+b), needed=Math.max(0,total-c), monthly=needed/m, weekly=needed/(m*4.33); savingsResults.innerHTML=`<h2>Savings estimate</h2><p class="result">Total savings goal: ${money(total)}</p><p>Amount still needed: ${money(needed)}</p><p>Monthly target: ${money(monthly)} · Weekly target: ${money(weekly)}</p><table><tr><th>Milestone</th><th>Target saved</th></tr><tr><td>Halfway to due date</td><td>${money(total/2)}</td></tr><tr><td>One month before due date</td><td>${money(total-monthly)}</td></tr><tr><td>Due date</td><td>${money(total)}</td></tr></table>`}
+['months','goal','current','buffer'].forEach(id=>document.getElementById(id).addEventListener('input',savingsCalc)); calcSavings.addEventListener('click',savingsCalc); savingsCalc();
+</script>
+  </body>
+</html>

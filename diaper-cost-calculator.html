@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Diaper Cost Calculator — How Much Will Diapers Cost?</title>
+    <meta name="description" content="Calculate how much you'll spend on diapers from newborn through potty training. Compare disposable, premium, and cloth diaper costs." />
+    <link rel="canonical" href="https://babycostcalculator.com/diaper-cost-calculator" />
+    <meta property="og:url" content="https://babycostcalculator.com/diaper-cost-calculator" />
+    <style>
+      body { margin: 0; font-family: system-ui, -apple-system, Segoe UI, sans-serif; background: #eef5f2; color: #1d2428; line-height: 1.65; }
+      header, main, footer { max-width: 900px; margin: 0 auto; padding: 24px; }
+      nav { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 12px; }
+      a { color: #24695e; font-weight: 700; }
+      .article { background: #fff; border: 1px solid #d8e1e3; border-radius: 8px; padding: 30px; box-shadow: 0 18px 45px rgba(55,75,78,.12); }
+      h1 { line-height: 1.1; font-size: clamp(2rem, 4vw, 3rem); }
+      h2 { margin-top: 30px; line-height: 1.2; }
+      h3 { line-height: 1.25; }
+      .lead { font-size: 1.12rem; color: #405056; }
+      .callout { background: #edf8f5; border: 1px solid #b8d8d1; border-radius: 8px; padding: 18px; margin: 24px 0; }
+      .grid { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); margin: 24px 0; }
+      .card { background: #f4f7f6; border: 1px solid #d8e1e3; border-radius: 8px; padding: 18px; }
+      label { display: grid; gap: 6px; font-weight: 700; }
+      input, select { border: 1px solid #b8c6c9; border-radius: 8px; font: inherit; padding: 10px; background: #fff; }
+      button { background: #24695e; border: 0; border-radius: 8px; color: #fff; cursor: pointer; font: inherit; font-weight: 800; padding: 12px 16px; }
+      .result { font-size: 1.1rem; font-weight: 800; margin-top: 16px; }
+      .results { background: #f7fbfa; border: 1px solid #cbdcde; border-radius: 8px; margin-top: 22px; padding: 18px; }
+      table { border-collapse: collapse; margin: 18px 0; width: 100%; }
+      th, td { border: 1px solid #d8e1e3; padding: 10px; text-align: left; vertical-align: top; }
+      th { background: #edf8f5; }
+      .faq details { border-top: 1px solid #d8e1e3; padding: 12px 0; }
+      .print-button { background: #405056; margin-left: 8px; }
+      footer { color: #607078; font-size: .95rem; }
+      @media print { header, footer, nav, .no-print, button { display: none !important; } body { background: #fff; } main { max-width: none; padding: 0; } .article, .results { box-shadow: none; border: 0; } .results { page-break-inside: avoid; } }
+    </style>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0TJ86SZTZ7"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-0TJ86SZTZ7');
+  </script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8595359622097061" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header>
+      <strong>Baby Cost Calculator</strong>
+      <nav>
+        <a href="index.html">Calculator</a>
+        <a href="first-year-baby-costs.html">First-Year Costs</a>
+        <a href="new-baby-budget-checklist.html">Budget Checklist</a>
+        <a href="diaper-and-formula-cost-guide.html">Diapers & Formula</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="disclaimer.html">Disclaimer</a>
+      </nav>
+    </header>
+    <main>
+      <article class="article">
+        <h1>Diaper Cost Calculator</h1><p class="lead">Estimate diaper costs from newborn days through potty training and compare budget disposable, name brand, premium, and cloth options.</p><div class="grid no-print"><label>Diaper type<select id="diaperType"><option value="budget">Budget disposable</option><option value="brand">Name brand</option><option value="premium">Premium</option><option value="cloth">Cloth</option></select></label><label>Newborn diapers per day<input id="newborn" type="number" value="11" min="0" step="0.5"></label><label>3-6 months diapers per day<input id="m3" type="number" value="9" min="0" step="0.5"></label><label>6-12 months diapers per day<input id="m6" type="number" value="7" min="0" step="0.5"></label><label>1-2 years diapers per day<input id="y1" type="number" value="5" min="0" step="0.5"></label><label>2-3 years diapers per day<input id="y2" type="number" value="3.5" min="0" step="0.5"></label><label>Cost per diaper<input id="cost" type="number" value="0.23" min="0" step="0.01"></label><label>Age to potty train<select id="potty"><option value="24">24 months</option><option value="30" selected>30 months</option><option value="36">36 months</option></select></label></div><button id="calcDiapers" type="button">Calculate Diaper Cost</button><button class="print-button" type="button" onclick="window.print()">Print Results</button><section class="results" id="diaperResults" aria-live="polite"></section><h2>Understanding diaper costs</h2><p>Diaper costs are one of the most predictable recurring expenses in the baby years, but they still surprise many families because the cost is spread across hundreds and then thousands of small purchases. A newborn may need a diaper change after nearly every feeding, so the first months are usually the most intense. As babies get older, the daily number often drops, but larger diaper sizes can cost more per diaper. That is why a realistic estimate looks at both diapers per day and cost per diaper instead of using one flat monthly number.</p><p>Disposable diaper prices vary by brand, size, sales, and whether you buy small packs or large boxes. Budget disposables can work well for many families, while premium brands may cost more because of softness, absorbency, overnight performance, or sensitive-skin features. Name-brand diapers often fall in the middle. Cloth diapering has a higher setup cost and laundry commitment, but the per-change cost can be low if you wash at home and reuse the same stash for many months.</p><p>Potty training age makes a big difference. A child who trains around twenty-four months will use far fewer diapers than a child who trains closer to thirty-six months. Neither timeline is wrong; children vary. The goal of this calculator is not to pressure a milestone, but to help you see how the timeline affects the budget. You can also adjust daily diaper use to match your child, childcare routine, overnight needs, and whether pull-ups are part of your plan.</p><section class="faq"><h2>Diaper Cost FAQ</h2><details><summary>How many diapers does a newborn use per day?</summary><p>Many newborns use about ten to twelve diapers per day, though the number changes quickly as feeding and sleep patterns settle.</p></details><details><summary>Are cloth diapers always cheaper?</summary><p>Cloth can be cheaper over time, especially if reused for more than one child, but washing, inserts, liners, and convenience matter.</p></details><details><summary>How can I lower diaper costs?</summary><p>Compare unit prices, try store brands, use subscriptions carefully, and avoid overbuying newborn sizes before you know your baby's fit.</p></details><details><summary>When do diaper costs usually drop?</summary><p>Costs usually drop as babies use fewer diapers per day, especially after the first six to twelve months.</p></details><details><summary>Should I stockpile diapers before birth?</summary><p>A small starter supply is useful, but large stockpiles can backfire if a brand leaks, irritates skin, or the baby outgrows a size quickly.</p></details></section>
+      </article>
+    </main>
+    <footer>
+      © 2026 Baby Cost Calculator ·
+      <a href="index.html">Calculator</a> ·
+      <a href="diaper-cost-calculator.html">Diaper Cost</a> ·
+      <a href="formula-cost-calculator.html">Formula Cost</a> ·
+      <a href="childcare-cost-calculator.html">Childcare Cost</a> ·
+      <a href="baby-savings-calculator.html">Baby Savings</a> ·
+      <a href="how-to-save-money-on-baby-essentials.html">Save on Essentials</a> ·
+      <a href="breastfeeding-vs-formula-cost-comparison.html">Breastfeeding vs Formula</a> ·
+      <a href="hidden-costs-of-having-a-baby.html">Hidden Costs</a> ·
+      <a href="about.html">About</a> ·
+      <a href="contact.html">Contact</a> ·
+      <a href="privacy.html">Privacy</a> ·
+      <a href="disclaimer.html">Disclaimer</a>
+    </footer>
+    <script>
+const diaperPrices={budget:.18,brand:.28,premium:.38,cloth:.08};
+function money(n){return new Intl.NumberFormat('en-US',{style:'currency',currency:'USD',maximumFractionDigits:0}).format(n)}
+function diaperCalc(){const type=document.getElementById('diaperType').value; const cost=Number(document.getElementById('cost').value||0); const potty=Number(document.getElementById('potty').value); const stages=[['Newborn',1,Number(newborn.value)],['3-6 months',5,Number(m3.value)],['6-12 months',6,Number(m6.value)],['1-2 years',12,Number(y1.value)],['2-3 years',Math.max(0,potty-24),Number(y2.value)]]; let rows='', total=0; stages.forEach(([name,months,perDay])=>{const monthly=perDay*30.4*cost; const stage=monthly*months; total+=stage; rows+=`<tr><td>${name}</td><td>${perDay}</td><td>${money(monthly)}</td><td>${money(stage)}</td></tr>`}); const compare=Object.entries(diaperPrices).map(([k,v])=>`<tr><td>${k}</td><td>${money(stages.reduce((s,x)=>s+x[1]*x[2]*30.4*v,0))}</td></tr>`).join(''); diaperResults.innerHTML=`<h2>Diaper cost estimate</h2><p class="result">Total through potty training: ${money(total)}</p><table><tr><th>Stage</th><th>Per day</th><th>Monthly cost</th><th>Total by stage</th></tr>${rows}</table><h3>Comparison by diaper type</h3><table><tr><th>Type</th><th>Total estimate</th></tr>${compare}</table>`}
+diaperType.addEventListener('change',()=>{cost.value=diaperPrices[diaperType.value];diaperCalc()}); ['newborn','m3','m6','y1','y2','cost','potty'].forEach(id=>document.getElementById(id).addEventListener('input',diaperCalc)); calcDiapers.addEventListener('click',diaperCalc); diaperCalc();
+</script>
+  </body>
+</html>

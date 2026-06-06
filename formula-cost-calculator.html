@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Baby Formula Cost Calculator — Monthly & Yearly Estimates</title>
+    <meta name="description" content="Calculate how much baby formula will cost per month and for the first year. Compare store brand, name brand, and specialty formula costs." />
+    <link rel="canonical" href="https://babycostcalculator.com/formula-cost-calculator" />
+    <meta property="og:url" content="https://babycostcalculator.com/formula-cost-calculator" />
+    <style>
+      body { margin: 0; font-family: system-ui, -apple-system, Segoe UI, sans-serif; background: #eef5f2; color: #1d2428; line-height: 1.65; }
+      header, main, footer { max-width: 900px; margin: 0 auto; padding: 24px; }
+      nav { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 12px; }
+      a { color: #24695e; font-weight: 700; }
+      .article { background: #fff; border: 1px solid #d8e1e3; border-radius: 8px; padding: 30px; box-shadow: 0 18px 45px rgba(55,75,78,.12); }
+      h1 { line-height: 1.1; font-size: clamp(2rem, 4vw, 3rem); }
+      h2 { margin-top: 30px; line-height: 1.2; }
+      h3 { line-height: 1.25; }
+      .lead { font-size: 1.12rem; color: #405056; }
+      .callout { background: #edf8f5; border: 1px solid #b8d8d1; border-radius: 8px; padding: 18px; margin: 24px 0; }
+      .grid { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); margin: 24px 0; }
+      .card { background: #f4f7f6; border: 1px solid #d8e1e3; border-radius: 8px; padding: 18px; }
+      label { display: grid; gap: 6px; font-weight: 700; }
+      input, select { border: 1px solid #b8c6c9; border-radius: 8px; font: inherit; padding: 10px; background: #fff; }
+      button { background: #24695e; border: 0; border-radius: 8px; color: #fff; cursor: pointer; font: inherit; font-weight: 800; padding: 12px 16px; }
+      .result { font-size: 1.1rem; font-weight: 800; margin-top: 16px; }
+      .results { background: #f7fbfa; border: 1px solid #cbdcde; border-radius: 8px; margin-top: 22px; padding: 18px; }
+      table { border-collapse: collapse; margin: 18px 0; width: 100%; }
+      th, td { border: 1px solid #d8e1e3; padding: 10px; text-align: left; vertical-align: top; }
+      th { background: #edf8f5; }
+      .faq details { border-top: 1px solid #d8e1e3; padding: 12px 0; }
+      .print-button { background: #405056; margin-left: 8px; }
+      footer { color: #607078; font-size: .95rem; }
+      @media print { header, footer, nav, .no-print, button { display: none !important; } body { background: #fff; } main { max-width: none; padding: 0; } .article, .results { box-shadow: none; border: 0; } .results { page-break-inside: avoid; } }
+    </style>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0TJ86SZTZ7"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-0TJ86SZTZ7');
+  </script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8595359622097061" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header>
+      <strong>Baby Cost Calculator</strong>
+      <nav>
+        <a href="index.html">Calculator</a>
+        <a href="first-year-baby-costs.html">First-Year Costs</a>
+        <a href="new-baby-budget-checklist.html">Budget Checklist</a>
+        <a href="diaper-and-formula-cost-guide.html">Diapers & Formula</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="disclaimer.html">Disclaimer</a>
+      </nav>
+    </header>
+    <main>
+      <article class="article">
+        <h1>Baby Formula Cost Calculator</h1><p class="lead">Estimate monthly and first-year formula costs by formula type, feeding method, and age range.</p><div class="grid no-print"><label>Formula type<select id="formulaType"><option value="store">Store brand powder</option><option value="brand">Name brand powder</option><option value="liquid">Name brand liquid</option><option value="specialty">Specialty/hypoallergenic</option></select></label><label>Feeding method<select id="feedingMethod"><option value="1">Exclusively formula</option><option value="0.5">Combo breast+formula</option></select></label><label>Baby age range<select id="ageRange"><option value="0-6">0-6 months</option><option value="6-12">6-12 months</option><option value="year">Full first year</option></select></label><label>Ounces per day<input id="ounces" type="number" value="28" min="0" step="1"></label></div><button id="calcFormula" type="button">Calculate Formula Cost</button><button class="print-button" type="button" onclick="window.print()">Print Results</button><section class="results" id="formulaResults" aria-live="polite"></section><h2>Understanding formula costs</h2><p>Formula costs depend on the amount your baby drinks, the type of formula used, and whether you are feeding formula full time or combining it with breastfeeding. Powder is usually the lowest-cost format, especially store-brand powder. Name-brand powder often costs more per prepared ounce, and ready-to-feed liquid can be much more expensive because it is convenient and requires less mixing. Specialty or hypoallergenic formulas can cost significantly more, and families may use them only when recommended for a medical or feeding reason.</p><p>Daily intake changes over the first year. Many babies drink more formula per day during the middle months, then gradually shift as solid foods become part of the routine. This calculator uses an editable ounces-per-day field so you can adjust for your baby's actual intake. For combo feeding, the estimate reduces formula use to reflect that some calories are coming from breast milk. The result is still only an estimate, but it gives you a practical monthly number to compare against your grocery budget.</p><p>Formula savings can come from choosing store brand when appropriate, comparing unit prices, using manufacturer coupons carefully, and avoiding waste from prepared bottles that are not used in time. If your baby needs a specialty formula, ask your pediatrician whether samples, insurance coverage, WIC support, or manufacturer assistance programs may apply. The best choice is the one that is safe, sustainable, and recommended for your baby.</p><section class="faq"><h2>Formula Cost FAQ</h2><details><summary>How much formula does a baby drink per day?</summary><p>Many babies drink roughly twenty-four to thirty-two prepared ounces per day, but intake varies by age and baby.</p></details><details><summary>Is powder cheaper than liquid formula?</summary><p>Powder is usually much cheaper per prepared ounce than ready-to-feed liquid formula.</p></details><details><summary>Does combo feeding lower formula costs?</summary><p>Yes. If a baby receives some breast milk, the amount of formula purchased may be lower.</p></details><details><summary>Why is specialty formula so expensive?</summary><p>Specialty formulas often use different proteins or ingredients and may be produced for narrower medical needs.</p></details><details><summary>Can I switch formula to save money?</summary><p>Ask your pediatrician if your baby has allergies, reflux, growth concerns, or a medical reason for a specific formula.</p></details></section>
+      </article>
+    </main>
+    <footer>
+      © 2026 Baby Cost Calculator ·
+      <a href="index.html">Calculator</a> ·
+      <a href="diaper-cost-calculator.html">Diaper Cost</a> ·
+      <a href="formula-cost-calculator.html">Formula Cost</a> ·
+      <a href="childcare-cost-calculator.html">Childcare Cost</a> ·
+      <a href="baby-savings-calculator.html">Baby Savings</a> ·
+      <a href="how-to-save-money-on-baby-essentials.html">Save on Essentials</a> ·
+      <a href="breastfeeding-vs-formula-cost-comparison.html">Breastfeeding vs Formula</a> ·
+      <a href="hidden-costs-of-having-a-baby.html">Hidden Costs</a> ·
+      <a href="about.html">About</a> ·
+      <a href="contact.html">Contact</a> ·
+      <a href="privacy.html">Privacy</a> ·
+      <a href="disclaimer.html">Disclaimer</a>
+    </footer>
+    <script>
+const formulaPrices={store:.11,brand:.18,liquid:.32,specialty:.52};
+function money(n){return new Intl.NumberFormat('en-US',{style:'currency',currency:'USD',maximumFractionDigits:0}).format(n)}
+function formulaCalc(){const price=formulaPrices[formulaType.value]; const factor=Number(feedingMethod.value); const oz=Number(ounces.value||0)*factor; const months=ageRange.value==='year'?12:6; const monthly=oz*30.4*price; const yearly=ageRange.value==='year'?monthly*12:monthly*months; const compare=Object.entries(formulaPrices).map(([k,v])=>`<tr><td>${k}</td><td>${money(oz*30.4*v)}</td><td>${money((oz*30.4*v)*12)}</td></tr>`).join(''); const storeMonthly=oz*30.4*formulaPrices.store; formulaResults.innerHTML=`<h2>Formula cost estimate</h2><p class="result">Monthly cost: ${money(monthly)} · Estimated period cost: ${money(yearly)}</p><p>Potential monthly savings vs store brand: ${money(Math.max(0,monthly-storeMonthly))}</p><table><tr><th>Formula type</th><th>Monthly</th><th>Full year</th></tr>${compare}</table>`}
+ageRange.addEventListener('change',()=>{ounces.value=ageRange.value==='6-12'?24:28;formulaCalc()}); ['formulaType','feedingMethod','ounces'].forEach(id=>document.getElementById(id).addEventListener('input',formulaCalc)); calcFormula.addEventListener('click',formulaCalc); formulaCalc();
+</script>
+  </body>
+</html>
