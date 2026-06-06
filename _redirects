@@ -1,6 +1,20 @@
-http://babycostcalculator.com/* https://babycostcalculator.com/:splat 301!
-http://www.babycostcalculator.com/* https://babycostcalculator.com/:splat 301!
-https://www.babycostcalculator.com/* https://babycostcalculator.com/:splat 301!
+# Serve clean URLs (rewrites - must come first)
+/diaper-cost-calculator /diaper-cost-calculator.html 200!
+/formula-cost-calculator /formula-cost-calculator.html 200!
+/childcare-cost-calculator /childcare-cost-calculator.html 200!
+/baby-savings-calculator /baby-savings-calculator.html 200!
+/how-to-save-money-on-baby-essentials /how-to-save-money-on-baby-essentials.html 200!
+/breastfeeding-vs-formula-cost-comparison /breastfeeding-vs-formula-cost-comparison.html 200!
+/hidden-costs-of-having-a-baby /hidden-costs-of-having-a-baby.html 200!
+/first-year-baby-costs /first-year-baby-costs.html 200!
+/new-baby-budget-checklist /new-baby-budget-checklist.html 200!
+/diaper-and-formula-cost-guide /diaper-and-formula-cost-guide.html 200!
+/about /about.html 200!
+/contact /contact.html 200!
+/privacy /privacy.html 200!
+/disclaimer /disclaimer.html 200!
+
+# Redirect .html to clean URLs for SEO
 /index.html / 301!
 /first-year-baby-costs.html /first-year-baby-costs 301!
 /new-baby-budget-checklist.html /new-baby-budget-checklist 301!
@@ -16,3 +30,8 @@ https://www.babycostcalculator.com/* https://babycostcalculator.com/:splat 301!
 /how-to-save-money-on-baby-essentials.html /how-to-save-money-on-baby-essentials 301!
 /breastfeeding-vs-formula-cost-comparison.html /breastfeeding-vs-formula-cost-comparison 301!
 /hidden-costs-of-having-a-baby.html /hidden-costs-of-having-a-baby 301!
+
+# Force HTTPS
+http://babycostcalculator.com/* https://babycostcalculator.com/:splat 301!
+http://www.babycostcalculator.com/* https://babycostcalculator.com/:splat 301!
+https://www.babycostcalculator.com/* https://babycostcalculator.com/:splat 301!
