@@ -1,19 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Domain set to https://babycostcalculator.com/. -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://babycostcalculator.com/</loc></url>
-  <url><loc>https://babycostcalculator.com/first-year-baby-costs</loc></url>
-  <url><loc>https://babycostcalculator.com/new-baby-budget-checklist</loc></url>
-  <url><loc>https://babycostcalculator.com/diaper-and-formula-cost-guide</loc></url>
-  <url><loc>https://babycostcalculator.com/about</loc></url>
-  <url><loc>https://babycostcalculator.com/contact</loc></url>
-  <url><loc>https://babycostcalculator.com/privacy</loc></url>
-  <url><loc>https://babycostcalculator.com/disclaimer</loc></url>
-  <url><loc>https://babycostcalculator.com/diaper-cost-calculator</loc></url>
-  <url><loc>https://babycostcalculator.com/formula-cost-calculator</loc></url>
-  <url><loc>https://babycostcalculator.com/childcare-cost-calculator</loc></url>
-  <url><loc>https://babycostcalculator.com/baby-savings-calculator</loc></url>
-  <url><loc>https://babycostcalculator.com/how-to-save-money-on-baby-essentials</loc></url>
-  <url><loc>https://babycostcalculator.com/breastfeeding-vs-formula-cost-comparison</loc></url>
-  <url><loc>https://babycostcalculator.com/hidden-costs-of-having-a-baby</loc></url>
+  <url><loc>https://babycostcalculator.com/first-year-baby-costs.html</loc></url>
+  <url><loc>https://babycostcalculator.com/new-baby-budget-checklist.html</loc></url>
+  <url><loc>https://babycostcalculator.com/diaper-and-formula-cost-guide.html</loc></url>
+  <url><loc>https://babycostcalculator.com/about.html</loc></url>
+  <url><loc>https://babycostcalculator.com/contact.html</loc></url>
+  <url><loc>https://babycostcalculator.com/privacy.html</loc></url>
+  <url><loc>https://babycostcalculator.com/disclaimer.html</loc></url>
+  <url><loc>https://babycostcalculator.com/diaper-cost-calculator.html</loc></url>
+  <url><loc>https://babycostcalculator.com/formula-cost-calculator.html</loc></url>
+  <url><loc>https://babycostcalculator.com/childcare-cost-calculator.html</loc></url>
+  <url><loc>https://babycostcalculator.com/baby-savings-calculator.html</loc></url>
+  <url><loc>https://babycostcalculator.com/how-to-save-money-on-baby-essentials.html</loc></url>
+  <url><loc>https://babycostcalculator.com/breastfeeding-vs-formula-cost-comparison.html</loc></url>
+  <url><loc>https://babycostcalculator.com/hidden-costs-of-having-a-baby.html</loc></url>
 </urlset>
